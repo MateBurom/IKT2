@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap és Reszponzivitás</title>
+    <link href="buromm.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="glow">Bootstrap</h1>
+        <p>Bootstrap egy ingyenes és nyílt forráskódú CSS keretrendszer, amely segít a weboldalak gyors és könnyű kialakításában. A Bootstrap előre definiált stílusokat, oszloprendszert, reszponzív elrendezéseket, formatervezést, navigációt és egyéb felhasználói felületi elemeket kínál.</p>
+        
+        <h2 class="glow">Hasznos Bootstrap Parancsok:</h2>
+        <ul>
+            <li><code>container</code> - A tartalom középre igazításához használt alapvető Bootstrap osztály.</li>
+            <img src="container.png" class="kepek" alt="Container példa kép">
+            <li>A példában a container osztályt a legfelső szintű elembe helyeztem, ami azt jelenti, hogy az összes tartalom, beleértve a gombot is, ebben a középre igazított tartományban helyezkedik el. Ez a gyakorlatban azt jelenti, hogy a gomb a középen lesz elhelyezve az oldalon, nem pedig a bal szélen.</li>
+            <li><code>row</code> - Oszlopok sorozatának definiálása.</li>
+            <img src="row.png" class="kepek" alt="Row példa kép">
+            <li>Ebben a példában a row osztályt egy container elemen belül helyezzük el. Ezután két oszlopot definiálunk (col-md-6), amelyek a közepes méretű kijelzőkön egymás mellett helyezkednek el és az elrendezést felosztják. Ez a Bootstrap segítségével könnyen létrehozható egy egyszerű kétoszlopos elrendezés.</li>
+            <li><code>col-{size}</code> - Oszlopok méretének beállítása a Bootstrap oszloprendszerben.</li>
+            <img src="col.png" class="kepek" alt="Col példa kép">
+            <li>Ebben a példában a container osztály a Bootstrap keretrendszer alapja, amely a tartalmat középre igazítja és megfelelő térközt biztosít körülötte. A row osztály a Bootstrap grid rendszerének része, és a tartalmat egymás alá rendezheti. A col-md-6 osztályok a Bootstrap grid rendszerében a közepes méretű (md) képernyőkön felére osztják fel a rendelkezésre álló helyet. Ezáltal két oszlop jelenik meg egymás mellett a közepes méretű kijelzőkön, amelyek elfoglalják a konténer teljes szélességének felét.</li>
+            <li><code>btn</code> - Gomb stílusának alkalmazása.</li>
+            <img src="btn.png" class="kepek" alt="Btn példa kép">
+            <li>Ez a kód egy egyszerű Bootstrap gombot hoz létre, amely a "Kattints ide" szöveget tartalmazza. A gomb stílusát a Bootstrap btn és btn-primary osztályok határozzák meg, amelyek alapértelmezett stílusokat adnak hozzá a gombhoz, beleértve a háttérszínt és a betűstílust is.</li>
+            <li><code>navbar</code> - Navigációs sáv stílusának alkalmazása.</li>
+            <img src="navbar.png" class="kepek" alt="Navbar példa kép">
+            <li>Ez a kód létrehoz egy egyszerű Bootstrap navigációs sávot (navbar), amely sötét háttérszínnel (bg-dark) és fehér szöveggel (navbar-dark) rendelkezik. A navigációs sávban három menüpont található: "Kezdőlap", "Rólunk" és "Kapcsolat". A navigációs menü az oldal jobb szélén helyezkedik el (ml-auto).</li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <h1 class="glow">Reszponzivitás</h1>
+        <p>Reszponzivitás azt jelenti, hogy egy weboldal képes alkalmazkodni különböző kijelzőméretekhez és eszközökhöz. A reszponzív tervezés lehetővé teszi, hogy a weboldal automatikusan átrendezze, átméretezze és újraalkossa a tartalmat annak érdekében, hogy optimális legyen minden eszközön, például asztali számítógépeken, laptopokon, táblagépeken és okostelefonokon egyaránt.</p>
+        
+        <h2 class="glow">Hasznos Reszponzivitás Parancsok:</h2>
+        <ul>
+            <li><code>meta name="viewport"</code> - A viewport meta tag beállítása a reszponzív működéshez.</li>
+            <img src="viewport.png" class="kepek" alt="Viewport példa kép">
+            <li><code>@media</code> - Médialekérdezések használata a CSS-ben a különböző képernyőméretekhez való alkalmazkodáshoz.</li>
+            <img src="media.png" class="kepek" alt="Media példa kép">
+            <li>Ebben a példában az alapértelmezett stílusok meghatározzák a 'p' elem alapértelmezett betűméretét és színét. A @media lekérdezés aztán újra meghatározza a 'p' elem betűméretét (font-size) kisebb képernyőméretek esetén (600 pixelnél kisebb). Ezzel a kóddal a szöveg kisebb lesz, amikor a képernyő szélessége kisebb, mint 600 pixel. Ez lehetővé teszi a jobb olvashatóságot és a tartalom jobb alkalmazkodását kisebb képernyőméretekhez.</li>
+            <li><code>%</code> - Százalékos méret használata az elemek méretének relatív beállításához.</li>
+            <img src="%.png" class="kepek" alt="% példa kép">
+            <li>Ebben a példában a .tartalom osztályban a width tulajdonságot százalékban adjuk meg (width: 70%;). Ez azt jelenti, hogy a .tartalom div mérete 70%-ra lesz beállítva a szülőelem szélességéhez képest. Ezzel a módszerrel a tartalom középen fog megjelenni a képernyőn, mivel az elrendezést a Bootstrap .container osztály biztosítja a tartalom középre igazításához.</li>
+            <li><code>max-width</code> és <code>min-width</code> - A maximális és minimális szélesség meghatározása a reszponzív elrendezésekhez.</li>
+            <img src="maxesmin.png" class="kepek" alt="Max-width és min-width példa kép">
+            <li>Ebben a példában a .tartalom osztályban a max-width tulajdonság beállítva 800px-ra, és a min-width tulajdonság beállítva 300px-re. Ez azt jelenti, hogy a .tartalom div szélessége mindig legalább 300px, de soha nem lehet nagyobb, mint 800px. A max-width és min-width tulajdonságok segítségével határozzuk meg a tartalom rugalmas szélességét az eltérő képernyőméretekhez való alkalmazkodás érdekében.</li>
+            <li><code>flexbox</code> - Rugalmas elrendezés létrehozása az elemek reszponzív elhelyezéséhez.</li>
+            <img src="flexbox.png" class="kepek" alt="Flexbox példa kép">
+            <li>Ebben a példában a .container osztály display: flex; tulajdonságaival a konténer egy Flexbox konténer lesz. Az justify-content: space-between; tulajdonság segítségével az elemek egyenletesen lesznek elosztva a konténeren belül. Minden .elem osztályú elemnek van egy fix szélessége és magassága, valamint egy kis margó a szomszédos elemektől. Ezáltal ezek az elemek vízszintesen helyezkednek el egy sorban, és egyenletesen el vannak osztva a rendelkezésre álló helyen.</li>
+        </ul>
+    </div>
+</body>
+</html>
