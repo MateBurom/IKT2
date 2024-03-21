@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-image: url('background.png');
   color: white;
+  text-align:justify;
 }
 .container {
   max-width: 800px;
@@ -47,12 +48,24 @@ li:last-child {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px purple, 0 0 40px purple, 0 0 50px purple, 0 0 60px purple, 0 0 70px purple;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9b30ff, 0 0 40px #9b30ff, 0 0 50px #9b30ff, 0 0 60px #9b30ff, 0 0 70px #9b30ff;
   }
 }
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px purple, 0 0 40px purple, 0 0 50px purple, 0 0 60px purple, 0 0 70px purple;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9b30ff, 0 0 40px #9b30ff, 0 0 50px #9b30ff, 0 0 60px #9b30ff, 0 0 70px #9b30ff;
   }
+}
+
+.box {
+  margin: 20px auto;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
